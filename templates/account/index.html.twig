@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Compte{% endblock %}
+
+{% block content %}
+<h2>Mon compte - {{ app.user.nom }} {{ app.user.prenom }}</h2>
+    <a href="{{ path('app_account_password') }}"><button class="btn btn-outline-light">Modifier Mon Mot de passe</button></a>
+
+    <a href="{{ path('app_logout') }}"><button class="btn btn-outline-danger">Déconnexion</button></a>
+{% endblock %}

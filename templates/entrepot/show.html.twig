@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Entrepôt{% endblock %}
+{% block customcss %}
+    <link href="{{ asset('assets/css/features.css') }}" rel="stylesheet">
+{% endblock customcss %}
+
+{% block content %}
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Gestion des entrepôts</h2>
+        <div class="col mt-3">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('null');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-1 mt-1 mb-4 display-6 lh-1 fw-bold">{{ entrepot.nom }}</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="d-flex align-items-center me-3">
+                            <small>Rachid</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <small>500kg</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col mt-3">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('null');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-1 mt-1 mb-4 display-6 lh-1 fw-bold">{{ entrepot.nom }}</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="d-flex align-items-center me-3">
+                            <small>Rachid</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <small>500kg</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
